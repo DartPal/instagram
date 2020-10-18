@@ -1,7 +1,7 @@
 import React from "react";
 import User from "../User/User";
 
-const Users = () => {
+const Users = (props) => {
 
     return (
         <div className='right'>
