@@ -8,6 +8,7 @@ export default class Palette extends React.Component {
     state = {
         error: false,
         photos: [],
+        loading: true,
     }
 
     componentDidMount() {
@@ -30,6 +31,7 @@ export default class Palette extends React.Component {
         this.setState({
             error: false,
             photos: photos,
+            loading: false,
         })
     }
 

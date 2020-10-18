@@ -27,7 +27,6 @@ export default class Posts extends React.Component{
             posts,
             error: false,
         })
-        console.log(this.state.posts)
     }
 
     onError = error => {
