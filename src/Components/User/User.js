@@ -1,17 +1,17 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 
 const User = (props) => {
 
-    const {min, src, alt, name} = props;
+    const {min, altname, name, id, src} = props;
 
     return (
-        <a href="#" className={min ? "user min" : "user"}>
-            <img src={src} alt={alt}/>
+        <Link to={`/profile/${id}`} className={min ? "user min" : "user"}>
+            <img src={src} alt={altname}/>
             <div>
                 {name}
             </div>
-        </a>
+        </Link>
     )
 }
 
