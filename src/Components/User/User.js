@@ -6,7 +6,7 @@ const User = (props) => {
     const {min, altname, name, id, src} = props;
 
     return (
-        <Link to={`/profile/${id}`} className={min ? "user min" : "user"}>
+        <Link to='/profile' className={min ? "user min" : "user"}>
             <img src={src} alt={altname}/>
             <div>
                 {name}

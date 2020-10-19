@@ -40,7 +40,7 @@ class Users extends React.Component{
             const {name, altname, photo, id} = item
 
             return (
-                <User id={id} key={id} name={name} altname={altname} src={photo} min/>
+                <User  key={id} name={name} altname={altname} src={photo} min/>
             )
 
         });
